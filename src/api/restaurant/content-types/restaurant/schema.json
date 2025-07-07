@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "singularName": "restaurant",
+    "pluralName": "restaurants",
+    "displayName": "Restaurant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "station_name": {
+      "type": "component",
+      "component": "station.area",
+      "repeatable": true
+    },
+    "Soup": {
+      "type": "enumeration",
+      "enum": [
+        "a_醤油",
+        "b_豚骨醤油",
+        "c_醤油",
+        "d_鶏白湯",
+        "e_家系",
+        "f_塩",
+        "g_味噌",
+        "h_その他"
+      ]
+    },
+    "PriceRange": {
+      "type": "enumeration",
+      "enum": [
+        "a_-800",
+        "b_800-1,000",
+        "c_1,000-1,200",
+        "d_1,200-1,500",
+        "e_1,500-"
+      ]
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
